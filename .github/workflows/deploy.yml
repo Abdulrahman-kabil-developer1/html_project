@@ -1,9 +1,9 @@
-name: Deploy static HTML to GitHub Pages
+name: Try My first git actions deploy
 
 on:
   push:
     branches:
-      - main  # Change this to your default branch if it's different
+      - main 
 
 jobs:
   deploy:
@@ -17,4 +17,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Root directory of your HTML files
+        publish_dir: ./
